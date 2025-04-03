@@ -1,0 +1,144 @@
+/* Footer Styles */
+.footer {
+    background-color: #0F2317;
+    color: var(--text-light);
+    padding: 60px 0 0 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.footer-logo-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.footer-description {
+    color: var(--text-gray);
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.social-media h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    color: var(--text-gray);
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info {
+    list-style: none;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: var(--text-gray);
+}
+
+.contact-info li i {
+    margin-right: 15px;
+    color: var(--primary-color);
+    width: 16px;
+}
+
+.contact-info li a {
+    color: var(--text-gray);
+    transition: color 0.3s;
+}
+
+.contact-info li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer-logo-section,
+    .footer-links,
+    .footer-contact {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 0 0;
+    }
+}

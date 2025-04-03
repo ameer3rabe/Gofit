@@ -1,0 +1,181 @@
+.hero {
+    display: flex;
+    padding: 2rem 5%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.hero-content {
+    flex: 1;
+    padding-top: 2rem;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    color: var(--text-gray);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.get-started-btn, .watch-video-btn {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.get-started-btn {
+    background: var(--primary-color);
+    color: #000;
+    border: none;
+    font-weight: 600;
+}
+
+.watch-video-btn {
+    background: transparent;
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.play-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats {
+    display: flex;
+    gap: 3rem;
+}
+
+.stat-item h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: 0;
+}
+
+/* Hero Image Styles */
+.hero-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.accent {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.6;
+    filter: blur(6px);
+    z-index: 1;
+}
+
+.accent-1 {
+    top: 10%;
+    left: 10%;
+}
+
+.accent-2 {
+    top: 10%;
+    right: 20%;
+}
+
+.accent-3 {
+    bottom: 20%;
+    left: 15%;
+}
+
+.accent-4 {
+    bottom: 30%;
+    right: 10%;
+}
+
+/* Experience Section Styles */
+.experience {
+    background-color: var(--dark-secondary);
+    padding: 3rem 5%;
+    margin-top: 2rem;
+}
+
+.pre-headline {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-content, .hero-image {
+        width: 100%;
+    }
+    
+    .hero-image {
+        margin-top: 3rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-buttons .login-btn {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
