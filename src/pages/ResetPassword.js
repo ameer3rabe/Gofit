@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash, faTimesCircle, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeSlash, faTimesCircle} from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../context/AuthContext';
 import '../styles/auth.css';
 
@@ -59,6 +59,7 @@ const ResetPassword = () => {
   };
 
   return (
+    <div className="auth-page">
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
@@ -134,6 +135,7 @@ const ResetPassword = () => {
           <p>Remember your password? <Link to="/signin" className="highlight">Sign In</Link></p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import {faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../context/AuthContext';
 import '../styles/auth.css';
 
@@ -97,6 +97,7 @@ const OtpVerification = () => {
   };
 
   return (
+    <div className="auth-page">
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
@@ -130,7 +131,7 @@ const OtpVerification = () => {
           <div className="resend-code">
             <p>Send code in <span id="countdown">{formatTime(timeLeft)}</span></p>
             <a 
-              href="#" 
+              href="/otp-verification" 
               id="resend-link" 
               className={isResendDisabled ? "disabled" : ""}
               onClick={handleResendOtp}
@@ -142,6 +143,7 @@ const OtpVerification = () => {
           <button type="submit" className="auth-button">Verify</button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

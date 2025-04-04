@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash, faTimesCircle, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeSlash, faTimesCircle} from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../context/AuthContext';
 import '../styles/auth.css';
 
@@ -47,6 +47,7 @@ const SignUp = () => {
   };
 
   return (
+    <div className="auth-page">
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
@@ -121,6 +122,7 @@ const SignUp = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };
